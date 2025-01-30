@@ -10,8 +10,8 @@ No major plans, intially just a minimalistic one-pager with a bit of a checklist
 
 ## Things to do
 
-[ ] update README.md  
-[ ] add to next category  
+[ ] update README.md   
+[ ] fix z-index positioning on ascii elements
 
 
 ## Eventually(potentially)
