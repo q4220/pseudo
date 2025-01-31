@@ -7,14 +7,104 @@
     height: 100%;
     pointer-events: none;
     z-index: -1;
+    overflow: hidden; /* Prevent elements from spilling */
 }
 
 .ascii-element {
     position: absolute;
     color: var(--primary-dark);
-    opacity: 0.4;
+    opacity: 0.6;
     font-family: monospace;
     font-size: 0.9rem;
+    transition: all 0.3s ease;
+    cursor: default;
+}
+
+.x7k {
+    color: rgba(0, 255, 65, 0.6);
+}
+
+.n3j {
+    color: rgba(0, 255, 85, 0.6);
+}
+
+.p9r {
+    color: rgba(0, 255, 45, 0.6);
+}
+
+/* Fixed hover styles */
+.ascii-element:hover {
+    opacity: 1;
+    transform: scale(1.1) rotate(0deg) !important;
+    text-shadow: 0 0 8px rgba(0, 255, 65, 0.4);
+}
+
+.ascii-element:hover ~ .ascii-element {
+    opacity: 0.8;
+}
+
+/* New decoder styles */
+.decoder summary {
+    list-style: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.decoder .category-icon {
+    font-family: monospace;
+    font-size: 1em;
+    color: var(--primary);
+}
+
+.decoder h2 {
+    margin: 0;
+    font-weight: normal;
+    letter-spacing: 1px;
+    color: var(--primary);
+}
+
+.decoder summary {
+    list-style: none;
+    cursor: pointer;
+}
+
+.decoder summary::-webkit-details-marker {
+    display: none;
+}
+
+.decoder .category-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background: none;
+    border: none;
+}
+
+/* Override any inherited category styles */
+.decoder::before,
+.decoder::after {
+    display: none;
+}
+
+.decoder h2 {
+    margin: 0;
+    font-weight: normal;
+    font-size: 1.1em;
+    letter-spacing: 1px;
+    color: var(--primary);
+}
+
+.decoder-space {
+    height: 0;
+    transition: height 0.3s ease;
+}
+
+.decoder details[open] .decoder-space {
+    height: 690px;
 }
 
 /* Data stream dividers */
@@ -48,6 +138,7 @@
     --bg-dark: #0a0a0a;
     --bg-darker: #050505;
     --monero: #ff6600;
+    --bitcoin: #f7931a;
 }
 
 body {
@@ -229,6 +320,31 @@ a:hover {
     text-shadow: 0 0 5px var(--section-color);
 }
 
+/* BTC section styling */
+.btc {
+    --section-color: var(--bitcoin);
+}
+
+.btc h2,
+.btc a,
+.btc .resource-icon,
+.btc .category-icon {
+    color: var(--section-color);
+}
+
+.btc {
+    border-color: rgba(255, 102, 0, 0.3);
+}
+
+.btc .category-header {
+    background: rgba(255, 102, 0, 0.1);
+}
+
+.btc a:hover {
+    color: #ffffff;
+    text-shadow: 0 0 5px var(--section-color);
+}
+
 /* Footer */
 footer {
     text-align: center;
@@ -248,9 +364,63 @@ footer {
         border-left: none;
         border-right: none;
         border-radius: 0;
+        position: relative;
+        z-index: 5;
+        background: rgba(0, 20, 0, 0.95);
     }
 
     header {
         text-align: center;
+    }
+
+    .ascii-element {
+        font-size: 0.7rem;
+        opacity: 0.4;
+    }
+
+    /* Keep elements within viewport bounds */
+    .ascii-element[style*="left: 92%"],
+    .ascii-element[style*="left: 95%"],
+    .ascii-element[style*="left: 88%"],
+    .ascii-element[style*="left: 85%"] {
+        left: 70% !important;
+    }
+
+    .ascii-element[style*="left: 2%"],
+    .ascii-element[style*="left: 3%"],
+    .ascii-element[style*="left: 5%"],
+    .ascii-element[style*="left: 8%"] {
+        left: 10% !important;
+    }
+
+    /* Adjust vertical spacing */
+    .ascii-element[style*="top: 85%"],
+    .ascii-element[style*="top: 88%"],
+    .ascii-element[style*="top: 92%"],
+    .ascii-element[style*="top: 95%"] {
+        top: 75% !important;
+    }
+
+    /* Ensure container clips properly */
+    .ascii-bg {
+        padding: 1rem;
+        overflow: hidden;
+        z-index: -1;
+    }
+}
+
+/* Add smaller screen adjustments */
+@media (max-width: 480px) {
+    .ascii-element {
+        font-size: 0.6rem;
+    }
+
+    /* More aggressive position adjustments */
+    .ascii-element[style*="left: 70%"] {
+        left: 60% !important;
+    }
+
+    .ascii-element[style*="left: 10%"] {
+        left: 15% !important;
     }
 }
