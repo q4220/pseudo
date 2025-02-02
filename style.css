@@ -1,3 +1,7 @@
+html {
+    overflow-y: scroll;
+}
+
 /* ASCII Background */
 .ascii-bg {
     position: fixed;
@@ -7,7 +11,7 @@
     height: 100%;
     pointer-events: none;
     z-index: 1;
-    overflow: hidden; /* Prevent elements from spilling */
+    overflow: hidden;
 }
 
 .ascii-element {
@@ -52,7 +56,7 @@
     font-weight: normal;
     letter-spacing: 1px;
     color: var(--primary);
-    font-size: 1.1em;
+    font-size: 0.9em;
 }
 
 .decoder summary::-webkit-details-marker {
@@ -120,7 +124,7 @@
 body {
     background-color: var(--bg-darker);
     color: var(--primary);
-    font-family: "Courier New", monospace;
+    font-family: monospace, Consolas, "Courier New";
     margin: 0;
     line-height: 1.6;
     min-height: 100vh;
@@ -211,7 +215,7 @@ main {
     align-items: center;
     gap: 1rem;
     padding: 1rem;
-    padding-left: 3.33rem;
+    padding-left: 2.2rem;
     background: var(--primary-glow);
 }
 
@@ -233,7 +237,7 @@ summary::-webkit-details-marker {
 
 h2 {
     margin: 0;
-    font-size: 1.3em;
+    font-size: 1.1rem;
     font-weight: normal;
     letter-spacing: 1px;
 }
@@ -267,6 +271,7 @@ a {
     color: var(--primary);
     text-decoration: none;
     transition: all 0.2s ease;
+    font-size: 0.95rem;
     flex: 1;
 }
 
@@ -363,7 +368,7 @@ footer {
 
     .category-header {
         font-size: 0.82rem;
-        padding-left: 1.8rem;
+        padding-left: 1.5rem;
     }
 
     .category-icon {
@@ -379,7 +384,7 @@ footer {
     }
 
     h2 {
-        font-size: 1.15rem;
+        font-size: 1.05rem;
     }
 
     a {
@@ -435,7 +440,16 @@ footer {
 /* Add smaller screen adjustments */
 @media (max-width: 480px) {
     h2 {
-        font-size: 1rem;
+        font-size: 0.9rem;
+    }
+
+    .category-header {
+        font-size: 0.77rem;
+        padding-left: 0.88rem;
+    }
+
+    .category-icon {
+        font-size: 0.74rem;
     }
 
     .ascii-element {
