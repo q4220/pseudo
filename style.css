@@ -1,15 +1,3 @@
-.x7k {
-    color: rgba(0, 255, 65, 0.6);
-}
-
-.n3j {
-    color: rgba(0, 255, 85, 0.6);
-}
-
-.p9r {
-    color: rgba(0, 255, 45, 0.6);
-}
-
 /* ASCII Background */
 .ascii-bg {
     position: fixed;
@@ -169,7 +157,7 @@ body {
     overflow: hidden;
     white-space: nowrap;
     margin: 0 auto;
-    animation: typing 3s steps(6, end);
+    animation: typing 0.8s steps(28, end);
     display: inline-block;
     width: 5.5em;
 }
@@ -212,18 +200,10 @@ main {
     z-index: 5;
 }
 
-/* Details/Summary styling */
-details {
-    transition: background-color 0.3s ease;
-}
-
-summary {
-    list-style: none;
-    cursor: pointer;
-}
-
-summary::-webkit-details-marker {
-    display: none;
+.category-icon {
+    font-family: monospace;
+    font-size: 1.2em;
+    text-shadow: 0 0 2px var(--primary);
 }
 
 .category-header {
@@ -231,18 +211,29 @@ summary::-webkit-details-marker {
     align-items: center;
     gap: 1rem;
     padding: 1rem;
-    padding-left: 2rem;
+    padding-left: 3.33rem;
     background: var(--primary-glow);
 }
 
-.category-icon {
-    font-family: monospace;
-    font-size: 1.2em;
-    text-shadow: 0 0 2px var(--primary);
+/* Details/Summary styling */
+details {
+    /* transition: background-color 0.3s ease; */
+    -webkit-tap-highlight-color: transparent;
+}
+
+summary {
+    list-style: none;
+    cursor: pointer;
+    user-select: none;
+}
+
+summary::-webkit-details-marker {
+    display: none;
 }
 
 h2 {
     margin: 0;
+    font-size: 1.3em;
     font-weight: normal;
     letter-spacing: 1px;
 }
@@ -282,6 +273,18 @@ a {
 a:hover {
     color: #ffffff;
     text-shadow: 0 0 5px var(--primary);
+}
+
+.x7k {
+    color: rgba(0, 255, 65, 0.6);
+}
+
+.n3j {
+    color: rgba(0, 255, 85, 0.6);
+}
+
+.p9r {
+    color: rgba(0, 255, 45, 0.6);
 }
 
 /* XMR section styling */
@@ -359,12 +362,16 @@ footer {
     }
 
     .category-header {
-        font-size: 0.86em;
-        padding-left: 1rem;
+        font-size: 0.82rem;
+        padding-left: 1.8rem;
     }
 
     .category-icon {
-        font-size: 0.82rem;
+        font-size: 0.8rem;
+    }
+
+    .resource-icon {
+        padding-left: 0.6rem;
     }
 
     header {
@@ -372,10 +379,22 @@ footer {
     }
 
     h2 {
+        font-size: 1.15rem;
     }
 
     a {
         font-size: 0.88rem;
+        text-decoration: none;
+    }
+
+    li {
+        margin: 0;
+        padding: 0.5rem 1rem;
+        padding-left: 0.8rem;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        transition: background-color 0.2s ease;
     }
 
     .ascii-element {
@@ -415,6 +434,10 @@ footer {
 
 /* Add smaller screen adjustments */
 @media (max-width: 480px) {
+    h2 {
+        font-size: 1rem;
+    }
+
     .ascii-element {
         font-size: 0.6rem;
     }
