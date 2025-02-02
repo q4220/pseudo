@@ -81,6 +81,8 @@ html {
 .decoder-space {
     height: 0;
     transition: height 0.3s ease;
+    font-size: 0.9rem;
+    padding: 0 1.3rem;
 }
 
 .decoder details[open] .decoder-space {
