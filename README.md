@@ -11,10 +11,11 @@ No major plans, intially just a minimalistic one-pager with a bit of a checklist
 ## Things to do
 
 [ ] update README.md   
-[ ] fix z-index positioning on ascii elements
+[X] fix z-index positioning on ascii elements
 
 
 ## Eventually(potentially)
 
 [ ] move resources to SQL datatbase(probably) or JSON  
 [ ] add some instructions or tutorials
+[ ] a puzzle perhaps
