@@ -13,12 +13,12 @@ Having some fun with HTML/CSS only.
 ## Things to do
 
 [ ] update README.md   
-[X] fix z-index positioning on ascii elements
-[ ] add BTC resources
+[X] fix z-index positioning on ascii elements  
+[ ] add BTC resources  
 
 
 ## Eventually(potentially)
 
 [ ] move resources to SQL datatbase(probably) or JSON  
-[ ] add some instructions or tutorials
+[ ] add some instructions or tutorials  
 [ ] a puzzle perhaps
