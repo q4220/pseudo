@@ -344,6 +344,69 @@ a:hover {
     text-shadow: 0 0 5px var(--section-color);
 }
 
+/* Terminal CSS */
+
+.info-box.terminal {
+    background: #0a0a0c;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.terminal-header {
+    background: #0a0a0c;
+    padding: 0.75rem 1rem;
+    font-family: "JetBrains Mono", monospace;
+    color: #666;
+    font-size: 0.9rem;
+    border-bottom: 1px solid #1a1a1a;
+}
+
+.terminal-content {
+    padding: 1rem;
+    font-family: "JetBrains Mono", monospace;
+    line-height: 1.6;
+    flex-grow: 1;
+    color: #00ff66;
+}
+
+.terminal-content .prompt {
+    color: #00ff66;
+    font-weight: bold;
+}
+
+.terminal-content .command {
+    color: #fffc;
+}
+
+.terminal-content .output {
+    color: #666;
+    padding-left: 1rem;
+}
+
+.terminal-content > div {
+    opacity: 0;
+    animation: appear 0.1s ease forwards;
+    animation-delay: calc(var(--line-index, 0) * 0.5s);
+}
+
+@keyframes typing {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes appear {
+    to {
+        opacity: 1;
+    }
+}
+
 /* Footer */
 footer {
     text-align: center;
