@@ -32,7 +32,7 @@
             <div class="ascii-element" style="top: 42%; left: 95%">&amp;&amp;</div>
         </div>
         <header>
-            <h1 class="typewriter">pseudo</h1>
+            <a href="index.html"><h1 class="typewriter">pseudo</h1></a>
         </header>
 
         <main>
@@ -45,50 +45,157 @@
                     <div class="decoder-space"></div>
                 </details>
             </section>
+
+            <!-- ssh-commands -->
             <section class="terminal-space">
                 <div class="info-box terminal">
-                    <div class="terminal-header">~/tutorial</div>
+                    <div class="terminal-header">~/ssh-commands</div>
                     <div class="terminal-content">
                         <div style="--delay: 0">
-                            <span class="prompt">user@tutorial:~$</span> <span class="command">first command</span>
+                            <span class="prompt">user@tutorial:~$</span>
+                            <span class="command">ssh-keygen -t ed25519 -f ~/.ssh/key_1 -C ""</span>
                         </div>
-                        <div style="--delay: 1" class="output">output here</div>
-                        <div style="--delay: 2">
-                            <span class="prompt">user@tutorial:~$</span> <span class="command">second command</span>
+                        <div style="--delay: 1" class="output">output</div>
+                        <div style="--delay: 2"><span class="prompt">user@tutorial:~$</span> <span class="command">ls ~/.ssh</span></div>
+                        <div style="--delay: 3" class="output">output</div>
+                        <div style="--delay: 4">
+                            <span class="prompt">user@tutorial:~$</span> <span class="command">cat ~/.ssh/key_1.pub</span>
                         </div>
-                        <div style="--delay: 3" class="output">output here</div>
+                        <div style="--delay: 3" class="output">output</div>
+                        <div style="--delay: 4">
+                            <span class="prompt">user@tutorial:~$</span> <span class="command">ssh-add ~/.ssh/key_1</span>
+                        </div>
+                        <div style="--delay: 3" class="output">output</div>
+                        <div style="--delay: 4">
+                            <span class="prompt">user@tutorial:~$</span> <span class="command">ssh-add -d ~/.ssh/key_1 </span>
+                        </div>
+                        <div style="--delay: 3" class="output">output</div>
+                        <div style="--delay: 4">
+                            <span class="prompt">user@tutorial:~$</span> <span class="command">rm ~/.ssh/key_1</span>
+                        </div>
+                        <div style="--delay: 3" class="output">output</div>
+                        <div style="--delay: 4">
+                            <span class="prompt">user@tutorial:~$</span> <span class="command">rm ~/.ssh/key_1.pub</span>
+                        </div>
+                        <div style="--delay: 3" class="output">output</div>
+                        <div style="--delay: 4">
+                            <span class="prompt">user@tutorial:~$</span> <span class="command">eval $(ssh-agent) </span>
+                        </div>
+                        <div style="--delay: 3" class="output">output</div>
+                        <div style="--delay: 4">
+                            <span class="prompt">user@tutorial:~$</span> <span class="command">eval $(ssh-agent -k)</span>
+                        </div>
+                        <div style="--delay: 3" class="output">output</div>
+                        <div style="--delay: 4"><span class="prompt">user@tutorial:~$</span> <span class="command">ssh-add -l </span></div>
+                        <div style="--delay: 3" class="output">output</div>
                         <div style="--delay: 4"><span class="prompt">user@tutorial:~$</span> <span class="command">_</span></div>
                     </div>
                 </div>
             </section>
+
+            <!-- git-commands -->
             <section class="terminal-space">
                 <div class="info-box terminal">
-                    <div class="terminal-header">~/tutorial</div>
+                    <div class="terminal-header">~/git-commands</div>
                     <div class="terminal-content">
-                        <div style="--delay: 0">
-                            <span class="prompt">user@tutorial:~$</span> <span class="command">first command</span>
-                        </div>
-                        <div style="--delay: 1" class="output">output here</div>
+                        <div style="--delay: 0"><span class="prompt">user@tutorial:~$</span> <span class="command">git init</span></div>
+                        <div style="--delay: 1" class="output">output</div>
                         <div style="--delay: 2">
-                            <span class="prompt">user@tutorial:~$</span> <span class="command">second command</span>
+                            <span class="prompt">user@tutorial:~$</span> <span class="command">git clone [url]</span>
                         </div>
-                        <div style="--delay: 3" class="output">output here</div>
+                        <div style="--delay: 3" class="output">output</div>
+                        <div style="--delay: 2"><span class="prompt">user@tutorial:~$</span> <span class="command">git status</span></div>
+                        <div style="--delay: 3" class="output">output</div>
+                        <div style="--delay: 2">
+                            <span class="prompt">user@tutorial:~$</span> <span class="command">git add [file]</span>
+                        </div>
+                        <div style="--delay: 3" class="output">output</div>
+                        <div style="--delay: 2"><span class="prompt">user@tutorial:~$</span> <span class="command">git add .</span></div>
+                        <div style="--delay: 3" class="output">output</div>
+                        <div style="--delay: 2">
+                            <span class="prompt">user@tutorial:~$</span> <span class="command">git commit -m "[message]"</span>
+                        </div>
+                        <div style="--delay: 3" class="output">output</div>
+
+                        <div style="--delay: 2"><span class="prompt">user@tutorial:~$</span> <span class="command">git log</span></div>
+                        <div style="--delay: 3" class="output">output</div>
+                        <div style="--delay: 2">
+                            <span class="prompt">user@tutorial:~$</span>
+                            <span class="command">git config user.name "Your Pseudonym"</span>
+                        </div>
+                        <div style="--delay: 3" class="output">output</div>
+                        <div style="--delay: 2">
+                            <span class="prompt">user@tutorial:~$</span> <span class="command">git config user.email "anon@anon.com"</span>
+                        </div>
+                        <div style="--delay: 3" class="output">output</div>
+                        <div style="--delay: 2">
+                            <span class="prompt">user@tutorial:~$</span>
+                            <span class="command">git config --global user.name "Your Pseudonym"</span>
+                        </div>
+                        <div style="--delay: 3" class="output">output</div>
+                        <div style="--delay: 2">
+                            <span class="prompt">user@tutorial:~$</span>
+                            <span class="command">git config --global user.email "anon@anon.com"</span>
+                        </div>
+                        <div style="--delay: 3" class="output">output</div>
+                        <div style="--delay: 2">
+                            <span class="prompt">user@tutorial:~$</span> <span class="command">git remote add origin [url]</span>
+                        </div>
+                        <div style="--delay: 3" class="output">output</div>
+                        <div style="--delay: 2">
+                            <span class="prompt">user@tutorial:~$</span> <span class="command">git push origin [branch]</span>
+                        </div>
+                        <div style="--delay: 3" class="output">output</div>
+                        <div style="--delay: 2">
+                            <span class="prompt">user@tutorial:~$</span> <span class="command">git pull origin [branch]</span>
+                        </div>
+                        <div style="--delay: 3" class="output">output</div>
+                        <div style="--delay: 2">
+                            <span class="prompt">user@tutorial:~$</span> <span class="command">git push origin -u [branch]</span>
+                        </div>
+                        <div style="--delay: 3" class="output">output</div>
+                        <div style="--delay: 2"><span class="prompt">user@tutorial:~$</span> <span class="command">git fetch</span></div>
+                        <div style="--delay: 3" class="output">output</div>
+                        <div style="--delay: 2"><span class="prompt">user@tutorial:~$</span> <span class="command">git pull</span></div>
+                        <div style="--delay: 3" class="output">output</div>
+                        <div style="--delay: 2"><span class="prompt">user@tutorial:~$</span> <span class="command">git push</span></div>
+                        <div style="--delay: 3" class="output">output</div>
+                        <div style="--delay: 2"><span class="prompt">user@tutorial:~$</span> <span class="command">git branch</span></div>
+                        <div style="--delay: 3" class="output">output</div>
+                        <div style="--delay: 2">
+                            <span class="prompt">user@tutorial:~$</span> <span class="command">git branch [branch-name]</span>
+                        </div>
+                        <div style="--delay: 3" class="output">output</div>
+                        <div style="--delay: 2">
+                            <span class="prompt">user@tutorial:~$</span> <span class="command">git checkout [branch-name]</span>
+                        </div>
+                        <div style="--delay: 3" class="output">output</div>
+                        <div style="--delay: 2">
+                            <span class="prompt">user@tutorial:~$</span> <span class="command">git checkout -b [new-branch]</span>
+                        </div>
+                        <div style="--delay: 3" class="output">output</div>
+                        <div style="--delay: 2">
+                            <span class="prompt">user@tutorial:~$</span> <span class="command">git merge [branch-name]</span>
+                        </div>
+                        <div style="--delay: 3" class="output">output</div>
                         <div style="--delay: 4"><span class="prompt">user@tutorial:~$</span> <span class="command">_</span></div>
                     </div>
                 </div>
             </section>
+
+            <!-- pgp-commands -->
             <section class="terminal-space">
                 <div class="info-box terminal">
-                    <div class="terminal-header">~/tutorial</div>
+                    <div class="terminal-header">~/pgp-commands</div>
                     <div class="terminal-content">
                         <div style="--delay: 0">
                             <span class="prompt">user@tutorial:~$</span> <span class="command">first command</span>
                         </div>
-                        <div style="--delay: 1" class="output">output here</div>
+                        <div style="--delay: 1" class="output">output</div>
                         <div style="--delay: 2">
                             <span class="prompt">user@tutorial:~$</span> <span class="command">second command</span>
                         </div>
-                        <div style="--delay: 3" class="output">output here</div>
+                        <div style="--delay: 3" class="output">output</div>
                         <div style="--delay: 4"><span class="prompt">user@tutorial:~$</span> <span class="command">_</span></div>
                     </div>
                 </div>
