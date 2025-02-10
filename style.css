@@ -350,7 +350,7 @@ a:hover {
     background: var(--terminal-bg);
     border-radius: 4px;
     border: var(--border-light);
-    min-height: 400px;
+    min-height: 333px;
     display: flex;
     flex-direction: column;
 }
