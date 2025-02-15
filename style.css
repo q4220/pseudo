@@ -348,12 +348,15 @@ a:hover {
 .lookatme {
     text-decoration: underline;
     color: #7ffcd2;
-    cursor: default;
 }
 
 .lookatme:hover {
     color: #ffffff;
     text-shadow: 0 0 5px var(--secondary-glow);
+}
+
+a[href="javascript:void(0)"] {
+    cursor: default !important;
 }
 
 .note {
@@ -364,6 +367,10 @@ a:hover {
 .note-light {
     font-size: 0.8rem;
     color: #bcf9af;
+}
+
+li .note-light {
+    padding-bottom: 0 3rem;
 }
 
 /* Terminal CSS */
