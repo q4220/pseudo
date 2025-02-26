@@ -197,7 +197,7 @@ main {
 
 /* Category styling */
 .category {
-    margin-bottom: 2rem;
+    margin-bottom: 2.8rem;
     position: relative;
     z-index: 1;
     background: rgba(0, 20, 0, 0.95);
