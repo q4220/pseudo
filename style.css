@@ -410,6 +410,29 @@ li .note-light {
     padding-left: 1rem;
 }
 
+/* Terminal Details/Summary styling */
+.terminal-details {
+    margin-bottom: 20px;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.terminal-details > summary {
+    list-style: none;
+    cursor: pointer;
+    user-select: none;
+}
+
+.terminal-details > summary::-webkit-details-marker {
+    display: none;
+}
+
+/* Adjust the info-box to work with details */
+.terminal-details > .info-box.terminal {
+    border-top: none;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
 /* Footer */
 footer {
     text-align: center;

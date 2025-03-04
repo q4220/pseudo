@@ -5,20 +5,21 @@ Just sharing some good resources I've come across on my travels through the digi
 
 I have used, intend to use or know of the privacy community recommending most of these and will do my best to keep them up to date, however, it's always good to use the links & do a bit of a search before using a service so you understand what it is you are getting into. It's also quite common for changes or new information to arise in privacy & security technology so it's worth checking for any recent updates via their communication pathways or searching online.
 
-No major plans, intially just a minimalistic one-pager with a bit of a checklist and aggregating a few others who have done the same in a lot more depth. I hope it serves you well & helps your peace of mind.
+The intention is aggregation of good resources and to save people some time getting started with privacy, security, some crypto, code & linux. I hope it serves you well & helps your peace of mind.
 
 Having some fun with HTML/CSS only.
 
 
 ## Things to do
 
-[ ] update README.md   
-[X] fix z-index positioning on ascii elements  
-[ ] add BTC resources  
+[ ] update README.md     
+[ ] add some instructions or tutorials(in progress)  
+[ ] add basic linux commands and/or links to good cheat sheets(probably the go)  
+[ ] clean up page navigation  
+[ ]  
 
 
 ## Eventually(potentially)
 
 [ ] move resources to SQL datatbase(probably) or JSON  
-[ ] add some instructions or tutorials  
 [ ] a puzzle perhaps
