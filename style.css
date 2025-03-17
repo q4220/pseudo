@@ -86,7 +86,8 @@ html {
 }
 
 .decoder details[open] .decoder-space {
-    height: 620px;
+    height: auto;
+    padding-bottom: 3rem;
 }
 
 /* Data stream dividers */
@@ -453,7 +454,7 @@ footer {
     }
 
     .decoder details[open] .decoder-space {
-        height: 850px;
+        height: auto;
     }
 
     .category {
