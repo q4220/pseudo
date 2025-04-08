@@ -12,12 +12,12 @@ Having some fun with HTML/CSS only.
 
 ## Things to do
 
-[ ] update README.md
-[ ] add some instructions or tutorials(in progress)
-[ ] add basic linux commands and/or links to good cheat sheets(in progress)
+[ ] update README.md  
+[ ] add some instructions or tutorials(in progress)  
+[ ] add basic linux commands and/or links to good cheat sheets(in progress)  
 
 
 ## Eventually(potentially)
 
-[ ] move resources to SQL datatbase(probably) or JSON
+[ ] move resources to SQL datatbase(probably) or JSON  
 [ ] a puzzle perhaps
